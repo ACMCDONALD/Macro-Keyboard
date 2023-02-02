@@ -2,7 +2,7 @@
 #when a 60% keyboard was a bad idea
 #created by: andrew mcdonald
 #date created: January 15, 2023
-#date edited: January 15, 2023
+#date edited: February 2, 2023
 
 import time
 import board
@@ -103,31 +103,31 @@ while True:
     # keycodes
     
     # button1 = ~
-    elif button1.value:
+    if button1.value:
         kbd.send(Keycode.POUND)
         
     # button2 = left arrow
-    elif button2.value:
+    if button2.value:
         kbd.send(Keycode.A)
         
     # button3 = 
-    elif button3.value:
+    if button3.value:
         kbd.send(Keycode.A)
         
     # button4 = 
-    elif button4.value:
+    if button4.value:
        consumer.send(ConsumerControlCode.PLAY_PAUSE)
     
     # button5 = 
-    elif button5.value:
+    if button5.value:
         kbd.send(Keycode.DELETE)
     
     # button6 = up arrow
-    elif button6.value:
+    if button6.value:
         kbd.send(Keycode.UP_ARROW)
     
     # button7 = 
-    elif button7.value:
+    if button7.value:
         kbd.send(Keycode.A)
     
     # no button8
@@ -135,19 +135,19 @@ while True:
     #    kbd.send(Keycode.RIGHT_ARROW)
     
     # button9 = left arrow
-    elif button9.value:
+    if button9.value:
         kbd.send(Keycode.LEFTT_ARROW)
     
     # button10 = down arrow    
-    elif button10.value:
+    if button10.value:
         kbd.send(Keycode.DOWN_ARROW)
     
     # button11 = right arrow
-    elif button11.value:
+    if button11.value:
         kbd.send(Keycode.RIGHT_ARROW)
         
     # button12 =    
-    elif button12.value:
+    if button12.value:
         kbd.send(Keycode.A)
     
     time.sleep(0.2)
